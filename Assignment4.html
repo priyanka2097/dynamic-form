@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Assignment 4
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Assignment4.css">
+    <script src="Assignment4.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="formWrapper">
+            <h2><u><b>FORM ELEMENTS</b></u></h2><br><br>
+            <form>
+                <span class="topic">LABEL</span><br>
+                <input class="data" id="label" type="text" placeholder="ENTER LABEL" /><br>
+                <span class="topic">VALIDATION</span><br>
+                <select class="data">
+                    <option value="">NONE</option>
+                    <option value="emailval">EMAIL VALIDATION</option>
+                    <option value="numberval">PHONE NUMBER VALIDATION</option>
+                </select><br>
+                <span class="topic">REQUIRED FIELD</span><br>
+                <select class="data">
+                    <option value="no">NO</option>
+                    <option value="yes">YES</option>
+                </select><br>
+                <span class="topic">INPUT TYPE</span><br>
+                <select class="data">
+                    <option value="">SELECT CONTROL</option>
+                    <option value="textbox">TEXTBOX</option>
+                    <option value="checkbox">CHECKBOX</option>
+                    <option value="select">SELECT</option>
+                    <option value="password">PASSWORD</option>
+                    <option value="radioButton">RADIO BUTTON</option>
+                    <option value="button">BUTTON</option>
+                </select><br>
+                <div class="controlValues"></div>
+                <div class="inputCheckbox"></div>
+                <input type="reset" class="taskButton" value="CLEAR" id="reset" />
+            </form>
+        </div>
+        <div class="buttons1">
+            <input type="button" class="taskButton" value="ADD" id="add" />
+            <input type="button" class="taskButton" value="DELETE" id="delete" />
+            &nbsp; &nbsp;
+            <input type="button" class="taskButton" value="DONE" id="done" target="_blank" />
+        </div>
+        <div class="json">
+            <b>JSON ARRAY</b><br>
+            <p>copy this: </p>
+            <br>
+            <div class="formElementsArray">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
